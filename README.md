@@ -60,11 +60,21 @@ class Developer extends Human
 
 <br/>
 
-<a href="https://github.com/idevtim/feevio">
+<a href="https://apps.apple.com/us/app/lunodb/id6756377885">
+  <img src="https://img.shields.io/badge/iOS-LunoDB%20Mobile-06B6D4?style=for-the-badge&logo=apple&logoColor=white" alt="LunoDB Mobile"/>
+</a>
+
+**[LunoDB Mobile](https://apps.apple.com/us/app/lunodb/id6756377885)** — The mobile companion to LunoDB. Browse, query, and manage MySQL, PostgreSQL, MariaDB, SQL Server, and SQLite databases from your phone or tablet. Features an AI assistant, biometric authentication, chart visualizations, and QR code scanning to import connections from the desktop app.
+
+`React Native` `Expo` `TypeScript` `AI Assistant` `Biometric Auth` `iPad Optimized`
+
+<br/>
+
+<a href="https://apps.apple.com/us/app/feevio/id6759834831">
   <img src="https://img.shields.io/badge/iOS-Feevio-007AFF?style=for-the-badge&logo=apple&logoColor=white" alt="Feevio"/>
 </a>
 
-**[Feevio](https://github.com/idevtim/feevio)** — Financial calculator iOS & Apple Watch app with 10 purpose-built calculators for taxes, margins, fees, tips, and more. Real-time calculations, side-by-side comparisons, and built-in marketplace fee presets for eBay, Amazon, Etsy, and others.
+**[Feevio](https://apps.apple.com/us/app/feevio/id6759834831)** — Financial calculator iOS & Apple Watch app with 10 purpose-built calculators for taxes, margins, fees, tips, and more. Real-time calculations, side-by-side comparisons, and built-in marketplace fee presets for eBay, Amazon, Etsy, and others.
 
 `SwiftUI` `watchOS` `iOS 17+` `10 Calculators` `Apple Watch Companion`
 
