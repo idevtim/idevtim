@@ -35,6 +35,7 @@ class Developer extends Human
         'Backend'   => ['PHP', 'Laravel', 'MySQL', 'Redis', 'REST APIs'],
         'Frontend'  => ['React', 'Inertia.js', 'Tailwind CSS', 'TypeScript'],
         'Desktop'   => ['Electron', 'React Native'],
+        'Apple'     => ['Swift', 'SwiftUI', 'iOS', 'watchOS', 'macOS'],
         'AI'        => ['OpenAI', 'Claude', 'Gemini', 'Ollama'],
     ];
 
@@ -47,7 +48,7 @@ class Developer extends Human
 
 ---
 
-### Featured Project
+### Featured Projects
 
 <a href="https://lunodb.app">
   <img src="https://lunodb.app/images/lunodb-logo.png" width="80" alt="LunoDB"/>
@@ -56,6 +57,26 @@ class Developer extends Human
 **[LunoDB](https://lunodb.app)** — Modern, AI-powered database client I built from scratch. Write SQL in plain English, visualize data, and manage 8 database types across macOS, Windows, and Linux.
 
 `60+ releases` `300+ features` `8 AI providers` `Built in 4 months`
+
+<br/>
+
+<a href="https://github.com/idevtim/feevio">
+  <img src="https://img.shields.io/badge/iOS-Feevio-007AFF?style=for-the-badge&logo=apple&logoColor=white" alt="Feevio"/>
+</a>
+
+**[Feevio](https://github.com/idevtim/feevio)** — Financial calculator iOS & Apple Watch app with 10 purpose-built calculators for taxes, margins, fees, tips, and more. Real-time calculations, side-by-side comparisons, and built-in marketplace fee presets for eBay, Amazon, Etsy, and others.
+
+`SwiftUI` `watchOS` `iOS 17+` `10 Calculators` `Apple Watch Companion`
+
+<br/>
+
+<a href="https://github.com/idevtim/chillmac">
+  <img src="https://img.shields.io/badge/macOS-ChillMac-000000?style=for-the-badge&logo=apple&logoColor=white" alt="ChillMac"/>
+</a>
+
+**[ChillMac](https://github.com/idevtim/chillmac)** — Free, open-source macOS menu bar app for system monitoring and fan control. Real-time CPU/GPU temperatures, per-fan speed control, memory and battery health — all from the menu bar. Supports both Apple Silicon and Intel Macs.
+
+`Swift` `SwiftUI` `IOKit/SMC` `XPC` `Open Source`
 
 ---
 
@@ -75,6 +96,12 @@ class Developer extends Human
   <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker"/>
   <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux"/>
   <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git"/>
+</p>
+<p align="center">
+  <img src="https://img.shields.io/badge/Swift-F05138?style=for-the-badge&logo=swift&logoColor=white" alt="Swift"/>
+  <img src="https://img.shields.io/badge/SwiftUI-007AFF?style=for-the-badge&logo=swift&logoColor=white" alt="SwiftUI"/>
+  <img src="https://img.shields.io/badge/Xcode-147EFB?style=for-the-badge&logo=xcode&logoColor=white" alt="Xcode"/>
+  <img src="https://img.shields.io/badge/Electron-47848F?style=for-the-badge&logo=electron&logoColor=white" alt="Electron"/>
 </p>
 
 ---
