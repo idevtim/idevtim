@@ -107,6 +107,18 @@ class Developer extends Human
 
 ---
 
+### 04. Browser Extensions
+
+<a href="https://github.com/idevtim/demarkup">
+  <img src="https://img.shields.io/badge/Chrome-DeMarkup-4285F4?style=for-the-badge&logo=googlechrome&logoColor=white" alt="DeMarkup"/>
+</a>
+
+**[DeMarkup](https://github.com/idevtim/demarkup)** — Free, open-source Chrome extension that converts any webpage into clean, well-structured Markdown with one click. Smart content extraction, three conversion modes (main content, full page, selection), and an LLM optimization mode that strips noise for AI consumption. Privacy-first — all processing happens locally.
+
+`Chrome Extension` `Manifest V3` `Turndown.js` `Open Source`
+
+---
+
 ### Tech Stack
 
 <p align="center">
