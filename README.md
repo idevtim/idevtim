@@ -34,7 +34,8 @@ class Developer extends Human
     public array $skills = [
         'Backend'   => ['PHP', 'Laravel', 'MySQL', 'Redis', 'REST APIs'],
         'Frontend'  => ['React', 'Vue.js', 'Tailwind CSS', 'TypeScript'],
-        'Desktop'   => ['Electron', 'React Native'],
+        'Desktop'   => ['Tauri', 'Electron', 'React Native'],
+        'Systems'   => ['Rust'],
         'Apple'     => ['Swift', 'SwiftUI', 'iOS', 'watchOS', 'macOS'],
         'AI'        => ['OpenAI', 'Claude', 'Gemini', 'Ollama'],
         'Infra'     => ['Docker', 'AWS', 'Linux', 'Node.js'],
@@ -97,6 +98,16 @@ class Developer extends Human
 
 ### 03. Desktop Apps
 
+<a href="https://github.com/idevtim/lunopeak">
+  <img src="https://img.shields.io/badge/Cross--Platform-LunoPeak-06B6D4?style=for-the-badge&logo=tauri&logoColor=white" alt="LunoPeak"/>
+</a>
+
+**[LunoPeak](https://github.com/idevtim/lunopeak)** — Local-first dashboard for AI-assisted development. One window for every repo, every Claude Code and Codex session, and every config — with live activity, per-session token spend, budget alerts, full session replay, hygiene checks with one-click fixes, and a built-in Assistant that can query your environment using your own API keys. Native menu-bar integration, signed auto-updater, and no accounts or telemetry. macOS, Windows, and Linux from a single Rust + Tauri 2 binary.
+
+`Rust` `Tauri 2` `React 19` `TypeScript` `Tailwind 4` `Cross-Platform`
+
+<br/>
+
 <a href="https://github.com/idevtim/chillmac">
   <img src="https://img.shields.io/badge/macOS-ChillMac-000000?style=for-the-badge&logo=apple&logoColor=white" alt="ChillMac"/>
 </a>
@@ -140,7 +151,11 @@ class Developer extends Human
 <p align="center">
   <img src="https://img.shields.io/badge/Swift-F05138?style=for-the-badge&logo=swift&logoColor=white" alt="Swift"/>
   <img src="https://img.shields.io/badge/SwiftUI-007AFF?style=for-the-badge&logo=swift&logoColor=white" alt="SwiftUI"/>
+  <img src="https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white" alt="Rust"/>
+  <img src="https://img.shields.io/badge/Tauri-FFC131?style=for-the-badge&logo=tauri&logoColor=black" alt="Tauri"/>
   <img src="https://img.shields.io/badge/Electron-47848F?style=for-the-badge&logo=electron&logoColor=white" alt="Electron"/>
+</p>
+<p align="center">
   <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker"/>
   <img src="https://img.shields.io/badge/AWS-FF9900?style=for-the-badge&logo=amazonwebservices&logoColor=white" alt="AWS"/>
   <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux"/>
