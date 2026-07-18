@@ -94,6 +94,16 @@ class Developer extends Human
 
 `SwiftUI` `watchOS` `iOS 17+` `10 Calculators` `Apple Watch Companion`
 
+<br/>
+
+<a href="https://apps.apple.com/us/app/cage-break-rescue-run/id6786849290">
+  <img src="https://img.shields.io/badge/iOS-Cage%20Break%3A%20Rescue%20Run-34C759?style=for-the-badge&logo=apple&logoColor=white" alt="Cage Break: Rescue Run"/>
+</a>
+
+**[Cage Break: Rescue Run](https://apps.apple.com/us/app/cage-break-rescue-run/id6786849290)** — A cozy brick-breaker with an animal-rescue heart. Fire salvos of balls to free caged animals before they cross the danger line. Five hand-themed rescue worlds with 20 species, three difficulties, a persistent Sanctuary, a coin shop, 25 app icons, and optional Game Center leaderboards. Fully playable offline — no account, no ads, no analytics.
+
+`SwiftUI` `SpriteKit` `iOS 17+` `Game Center` `StoreKit 2` `Universal`
+
 ---
 
 ### 03. Desktop Apps
