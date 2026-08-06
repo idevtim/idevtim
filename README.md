@@ -58,7 +58,7 @@ class Developer extends Human
 
 **[LunoDB](https://lunodb.app)** — The AI-powered database platform for Desktop & Mobile. Monaco-based SQL editor with IntelliSense, SSH tunneling, data visualization, and natural language queries across 8 database systems. Free forever, with a Pro upgrade for advanced features.
 
-`90+ releases` `370+ features` `8 AI providers` `Built in 7 months`
+`90+ releases` `400+ features` `8 AI providers` `Built in 10 months`
 
 <br/>
 
