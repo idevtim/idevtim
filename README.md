@@ -62,6 +62,16 @@ class Developer extends Human
 
 <br/>
 
+<a href="https://lastseenup.com">
+  <img src="https://lastseenup.com/apple-touch-icon.png" width="80" alt="Last Seen Up"/>
+</a>
+
+**[Last Seen Up](https://lastseenup.com)** <img src="https://img.shields.io/badge/Coming%20Soon-06B6D4?style=flat-square&labelColor=0D1117" alt="Coming Soon"/> — Uptime, heartbeat, SSL and domain monitoring that double-checks every failure before it wakes you. Watches sites, ports, DNS, certificates, domain registrations and cron jobs from multiple regions, confirms a failure across regions before opening an incident, then escalates from a Time Sensitive push to a phone call until somebody acknowledges. Native iPhone, iPad and Apple Watch app with Live Activities counting the outage on the lock screen, widgets and complications — plus a web dashboard for the morning after.
+
+`Laravel` `React` `SwiftUI` `watchOS` `Multi-Region` `APNs` `Live Activities`
+
+<br/>
+
 **[ItsWorthMore.com](https://itsworthmore.com)** — A comprehensive e-commerce platform for buying and selling used electronics with advanced pricing algorithms and real-time valuations.
 
 `E-Commerce` `Laravel` `Real-Time Pricing`
@@ -75,6 +85,17 @@ class Developer extends Human
 ---
 
 ### 02. iOS Apps
+
+<a href="https://lastseenup.com">
+  <img src="https://img.shields.io/badge/iOS%20%26%20watchOS-Last%20Seen%20Up-06B6D4?style=for-the-badge&logo=apple&logoColor=white" alt="Last Seen Up"/>
+</a>
+<img src="https://img.shields.io/badge/Coming%20Soon-06B6D4?style=for-the-badge&labelColor=0D1117" alt="Coming Soon"/>
+
+**[Last Seen Up](https://lastseenup.com)** — The monitoring app for the person who gets woken up. Incidents arrive as Time Sensitive pushes that break through Focus, with Acknowledge and Snooze right on the notification — no unlocking, no app launch. A Live Activity counts the outage up on the lock screen and ends on the number that matters. Home and lock screen widgets, Apple Watch complications, and Siri Shortcuts for pausing a monitor or asking what the status is.
+
+`SwiftUI` `iOS 18+` `watchOS` `Live Activities` `WidgetKit` `App Intents` `StoreKit 2`
+
+<br/>
 
 <a href="https://apps.apple.com/us/app/lunodb/id6756377885">
   <img src="https://img.shields.io/badge/iOS-LunoDB%20Mobile-06B6D4?style=for-the-badge&logo=apple&logoColor=white" alt="LunoDB Mobile"/>
