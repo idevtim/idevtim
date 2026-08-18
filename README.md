@@ -53,7 +53,7 @@ class Developer extends Human
 ### 01. Websites
 
 <a href="https://lunodb.app">
-  <img src="https://lunodb.app/images/lunodb-logo.png" width="80" alt="LunoDB"/>
+  <img src="assets/icons/lunodb.png" width="80" alt="LunoDB"/>
 </a>
 
 **[LunoDB](https://lunodb.app)** — The AI-powered database platform for Desktop & Mobile. Monaco-based SQL editor with IntelliSense, SSH tunneling, data visualization, and natural language queries across 8 database systems. Free forever, with a Pro upgrade for advanced features.
@@ -63,7 +63,7 @@ class Developer extends Human
 <br/>
 
 <a href="https://lastseenup.com">
-  <img src="https://lastseenup.com/logo.png" width="80" alt="Last Seen Up"/>
+  <img src="assets/icons/lastseenup.png" width="80" alt="Last Seen Up"/>
 </a>
 
 **[Last Seen Up](https://lastseenup.com)** <img src="https://img.shields.io/badge/Coming%20Soon-06B6D4?style=flat-square&labelColor=0D1117" alt="Coming Soon"/> — Uptime, heartbeat, SSL and domain monitoring that double-checks every failure before it wakes you. Watches sites, ports, DNS, certificates, domain registrations and cron jobs from multiple regions, confirms a failure across regions before opening an incident, then escalates from a Time Sensitive push to a phone call until somebody acknowledges. Native iPhone, iPad and Apple Watch app with Live Activities counting the outage on the lock screen, widgets and complications — plus a web dashboard for the morning after.
@@ -73,7 +73,7 @@ class Developer extends Human
 <br/>
 
 <a href="https://itsworthmore.com">
-  <img src="https://itsworthmore.com/static/images/favicon-v2-180.png" width="80" alt="ItsWorthMore.com"/>
+  <img src="assets/icons/itsworthmore.png" width="80" alt="ItsWorthMore.com"/>
 </a>
 
 **[ItsWorthMore.com](https://itsworthmore.com)** — A comprehensive e-commerce platform for buying and selling used electronics with advanced pricing algorithms and real-time valuations.
@@ -83,7 +83,7 @@ class Developer extends Human
 <br/>
 
 <a href="https://listergenius.com">
-  <img src="https://listergenius.com/favicon.png" width="80" alt="ListerGenius"/>
+  <img src="assets/icons/listergenius.png" width="80" alt="ListerGenius"/>
 </a>
 
 **[ListerGenius](https://listergenius.com)** — Intelligent listing optimization platform that helps businesses maximize their online presence and sales conversion rates.
@@ -95,7 +95,7 @@ class Developer extends Human
 ### 02. iOS Apps
 
 <a href="https://lastseenup.com">
-  <img src="https://lastseenup.com/logo.png" width="80" align="middle" alt="Last Seen Up"/>
+  <img src="assets/icons/lastseenup.png" width="80" align="middle" alt="Last Seen Up"/>
 </a>
 <a href="https://lastseenup.com">
   <img src="https://img.shields.io/badge/iOS%20%26%20watchOS-Last%20Seen%20Up-06B6D4?style=for-the-badge&logo=apple&logoColor=white" align="middle" alt="Last Seen Up"/>
@@ -109,7 +109,7 @@ class Developer extends Human
 <br/>
 
 <a href="https://apps.apple.com/us/app/lunodb/id6756377885">
-  <img src="https://idevtim.com/images/lunodb-icon.png" width="80" align="middle" alt="LunoDB Mobile"/>
+  <img src="assets/icons/lunodb.png" width="80" align="middle" alt="LunoDB Mobile"/>
 </a>
 <a href="https://apps.apple.com/us/app/lunodb/id6756377885">
   <img src="https://img.shields.io/badge/iOS-LunoDB%20Mobile-06B6D4?style=for-the-badge&logo=apple&logoColor=white" align="middle" alt="LunoDB Mobile"/>
@@ -122,7 +122,7 @@ class Developer extends Human
 <br/>
 
 <a href="https://apps.apple.com/us/app/feevio/id6759834831">
-  <img src="https://idevtim.com/images/feevio-icon.png" width="80" align="middle" alt="Feevio"/>
+  <img src="assets/icons/feevio.png" width="80" align="middle" alt="Feevio"/>
 </a>
 <a href="https://apps.apple.com/us/app/feevio/id6759834831">
   <img src="https://img.shields.io/badge/iOS-Feevio-007AFF?style=for-the-badge&logo=apple&logoColor=white" align="middle" alt="Feevio"/>
@@ -137,7 +137,7 @@ class Developer extends Human
 ### 03. Games
 
 <a href="https://apps.apple.com/us/app/cage-break-rescue-run/id6786849290">
-  <img src="https://idevtim.com/images/cage-break-icon.png" width="80" align="middle" alt="Cage Break: Rescue Run"/>
+  <img src="assets/icons/cage-break.png" width="80" align="middle" alt="Cage Break: Rescue Run"/>
 </a>
 <a href="https://apps.apple.com/us/app/cage-break-rescue-run/id6786849290">
   <img src="https://img.shields.io/badge/iOS-Cage%20Break%3A%20Rescue%20Run-34C759?style=for-the-badge&logo=apple&logoColor=white" align="middle" alt="Cage Break: Rescue Run"/>
@@ -150,7 +150,7 @@ class Developer extends Human
 <br/>
 
 <a href="https://apps.apple.com/us/app/piece-of-mind-picture-puzzles/id6792975520">
-  <img src="https://idevtim.com/images/piece-of-mind-icon.png" width="80" align="middle" alt="Piece of Mind: Picture Puzzles"/>
+  <img src="assets/icons/piece-of-mind.png" width="80" align="middle" alt="Piece of Mind: Picture Puzzles"/>
 </a>
 <a href="https://apps.apple.com/us/app/piece-of-mind-picture-puzzles/id6792975520">
   <img src="https://img.shields.io/badge/iOS-Piece%20of%20Mind%3A%20Picture%20Puzzles-C0603F?style=for-the-badge&logo=apple&logoColor=white" align="middle" alt="Piece of Mind: Picture Puzzles"/>
@@ -165,7 +165,7 @@ class Developer extends Human
 ### 04. Desktop Apps
 
 <a href="https://lunopeak.com">
-  <img src="https://idevtim.com/images/lunopeak-icon.png" width="80" align="middle" alt="LunoPeak"/>
+  <img src="assets/icons/lunopeak.png" width="80" align="middle" alt="LunoPeak"/>
 </a>
 <a href="https://lunopeak.com">
   <img src="https://img.shields.io/badge/Cross--Platform-LunoPeak-06B6D4?style=for-the-badge&logo=tauri&logoColor=white" align="middle" alt="LunoPeak"/>
@@ -178,7 +178,7 @@ class Developer extends Human
 <br/>
 
 <a href="https://github.com/idevtim/chillmac">
-  <img src="https://idevtim.com/images/chillmac-icon.svg" width="80" align="middle" alt="ChillMac"/>
+  <img src="assets/icons/chillmac.png" width="80" align="middle" alt="ChillMac"/>
 </a>
 <a href="https://github.com/idevtim/chillmac">
   <img src="https://img.shields.io/badge/macOS-ChillMac-000000?style=for-the-badge&logo=apple&logoColor=white" align="middle" alt="ChillMac"/>
@@ -193,7 +193,7 @@ class Developer extends Human
 ### 05. Browser Extensions
 
 <a href="https://github.com/idevtim/demarkup">
-  <img src="https://idevtim.com/images/demarkup-icon.png" width="80" align="middle" alt="DeMarkup"/>
+  <img src="assets/icons/demarkup.png" width="80" align="middle" alt="DeMarkup"/>
 </a>
 <a href="https://github.com/idevtim/demarkup">
   <img src="https://img.shields.io/badge/Chrome-DeMarkup-4285F4?style=for-the-badge&logo=googlechrome&logoColor=white" align="middle" alt="DeMarkup"/>
