@@ -95,9 +95,12 @@ class Developer extends Human
 ### 02. iOS Apps
 
 <a href="https://lastseenup.com">
-  <img src="https://img.shields.io/badge/iOS%20%26%20watchOS-Last%20Seen%20Up-06B6D4?style=for-the-badge&logo=apple&logoColor=white" alt="Last Seen Up"/>
+  <img src="https://lastseenup.com/logo.png" width="80" align="middle" alt="Last Seen Up"/>
 </a>
-<img src="https://img.shields.io/badge/Coming%20Soon-06B6D4?style=for-the-badge&labelColor=0D1117" alt="Coming Soon"/>
+<a href="https://lastseenup.com">
+  <img src="https://img.shields.io/badge/iOS%20%26%20watchOS-Last%20Seen%20Up-06B6D4?style=for-the-badge&logo=apple&logoColor=white" align="middle" alt="Last Seen Up"/>
+</a>
+<img src="https://img.shields.io/badge/Coming%20Soon-06B6D4?style=for-the-badge&labelColor=0D1117" align="middle" alt="Coming Soon"/>
 
 **[Last Seen Up](https://lastseenup.com)** — The monitoring app for the person who gets woken up. Incidents arrive as Time Sensitive pushes that break through Focus, with Acknowledge and Snooze right on the notification — no unlocking, no app launch. A Live Activity counts the outage up on the lock screen and ends on the number that matters. Home and lock screen widgets, Apple Watch complications, and Siri Shortcuts for pausing a monitor or asking what the status is.
 
@@ -106,7 +109,10 @@ class Developer extends Human
 <br/>
 
 <a href="https://apps.apple.com/us/app/lunodb/id6756377885">
-  <img src="https://img.shields.io/badge/iOS-LunoDB%20Mobile-06B6D4?style=for-the-badge&logo=apple&logoColor=white" alt="LunoDB Mobile"/>
+  <img src="https://idevtim.com/images/lunodb-icon.png" width="80" align="middle" alt="LunoDB Mobile"/>
+</a>
+<a href="https://apps.apple.com/us/app/lunodb/id6756377885">
+  <img src="https://img.shields.io/badge/iOS-LunoDB%20Mobile-06B6D4?style=for-the-badge&logo=apple&logoColor=white" align="middle" alt="LunoDB Mobile"/>
 </a>
 
 **[LunoDB Mobile](https://apps.apple.com/us/app/lunodb/id6756377885)** — Database management from your pocket. Browse, query, and manage MySQL, PostgreSQL, MariaDB, SQL Server, and SQLite databases from your phone or tablet. Features an AI assistant, biometric authentication, chart visualizations, and QR code scanning to import connections from the desktop app.
@@ -116,39 +122,66 @@ class Developer extends Human
 <br/>
 
 <a href="https://apps.apple.com/us/app/feevio/id6759834831">
-  <img src="https://img.shields.io/badge/iOS-Feevio-007AFF?style=for-the-badge&logo=apple&logoColor=white" alt="Feevio"/>
+  <img src="https://idevtim.com/images/feevio-icon.png" width="80" align="middle" alt="Feevio"/>
+</a>
+<a href="https://apps.apple.com/us/app/feevio/id6759834831">
+  <img src="https://img.shields.io/badge/iOS-Feevio-007AFF?style=for-the-badge&logo=apple&logoColor=white" align="middle" alt="Feevio"/>
 </a>
 
 **[Feevio](https://apps.apple.com/us/app/feevio/id6759834831)** — Financial calculator iOS & Apple Watch app with 10 purpose-built calculators for taxes, margins, fees, tips, and more. Real-time calculations, side-by-side comparisons, and built-in marketplace fee presets for eBay, Amazon, Etsy, and others.
 
 `SwiftUI` `watchOS` `iOS 17+` `10 Calculators` `Apple Watch Companion`
 
-<br/>
+---
+
+### 03. Games
 
 <a href="https://apps.apple.com/us/app/cage-break-rescue-run/id6786849290">
-  <img src="https://img.shields.io/badge/iOS-Cage%20Break%3A%20Rescue%20Run-34C759?style=for-the-badge&logo=apple&logoColor=white" alt="Cage Break: Rescue Run"/>
+  <img src="https://idevtim.com/images/cage-break-icon.png" width="80" align="middle" alt="Cage Break: Rescue Run"/>
+</a>
+<a href="https://apps.apple.com/us/app/cage-break-rescue-run/id6786849290">
+  <img src="https://img.shields.io/badge/iOS-Cage%20Break%3A%20Rescue%20Run-34C759?style=for-the-badge&logo=apple&logoColor=white" align="middle" alt="Cage Break: Rescue Run"/>
 </a>
 
 **[Cage Break: Rescue Run](https://apps.apple.com/us/app/cage-break-rescue-run/id6786849290)** — A cozy brick-breaker with an animal-rescue heart. Fire salvos of balls to free caged animals before they cross the danger line. Five hand-themed rescue worlds with 20 species, three difficulties, a persistent Sanctuary, a coin shop, 25 app icons, and optional Game Center leaderboards. Fully playable offline — no account, no ads, no analytics.
 
 `SwiftUI` `SpriteKit` `iOS 17+` `Game Center` `StoreKit 2` `Universal`
 
----
+<br/>
 
-### 03. Desktop Apps
-
-<a href="https://github.com/idevtim/lunopeak">
-  <img src="https://img.shields.io/badge/Cross--Platform-LunoPeak-06B6D4?style=for-the-badge&logo=tauri&logoColor=white" alt="LunoPeak"/>
+<a href="https://apps.apple.com/us/app/piece-of-mind-picture-puzzles/id6792975520">
+  <img src="https://idevtim.com/images/piece-of-mind-icon.png" width="80" align="middle" alt="Piece of Mind: Picture Puzzles"/>
+</a>
+<a href="https://apps.apple.com/us/app/piece-of-mind-picture-puzzles/id6792975520">
+  <img src="https://img.shields.io/badge/iOS-Piece%20of%20Mind%3A%20Picture%20Puzzles-C0603F?style=for-the-badge&logo=apple&logoColor=white" align="middle" alt="Piece of Mind: Picture Puzzles"/>
 </a>
 
-**[LunoPeak](https://github.com/idevtim/lunopeak)** — Local-first dashboard for AI-assisted development. One window for every repo, every Claude Code and Codex session, and every config — with live activity, per-session token spend, budget alerts, full session replay, hygiene checks with one-click fixes, and a built-in Assistant that can query your environment using your own API keys. Native menu-bar integration, signed auto-updater, and no accounts or telemetry. macOS, Windows, and Linux from a single Rust + Tauri 2 binary.
+**[Piece of Mind: Picture Puzzles](https://apps.apple.com/us/app/piece-of-mind-picture-puzzles/id6792975520)** — A calm jigsaw app built around the pictures you already love. Pick a photo, crop it, choose a piece count, and settle in as it comes back together with a soft snap and a little sparkle. Play untimed with hints on hand or race a countdown, watch a replay of your solve and share it as a video, and pick up any puzzle exactly where you left it — entirely on device, no accounts, no ads, fully offline.
+
+`SwiftUI` `SwiftData` `iOS 18+` `PhotosUI` `AVFoundation` `Offline & Private`
+
+---
+
+### 04. Desktop Apps
+
+<a href="https://lunopeak.com">
+  <img src="https://idevtim.com/images/lunopeak-icon.png" width="80" align="middle" alt="LunoPeak"/>
+</a>
+<a href="https://lunopeak.com">
+  <img src="https://img.shields.io/badge/Cross--Platform-LunoPeak-06B6D4?style=for-the-badge&logo=tauri&logoColor=white" align="middle" alt="LunoPeak"/>
+</a>
+
+**[LunoPeak](https://lunopeak.com)** — Local-first dashboard for AI-assisted development. One window for every repo, every Claude Code and Codex session, and every config — with live activity, per-session token spend, budget alerts, full session replay, hygiene checks with one-click fixes, and a built-in Assistant that can query your environment using your own API keys. Native menu-bar integration, signed auto-updater, and no accounts or telemetry. macOS, Windows, and Linux from a single Rust + Tauri 2 binary.
 
 `Rust` `Tauri 2` `React 19` `TypeScript` `Tailwind 4` `Cross-Platform`
 
 <br/>
 
 <a href="https://github.com/idevtim/chillmac">
-  <img src="https://img.shields.io/badge/macOS-ChillMac-000000?style=for-the-badge&logo=apple&logoColor=white" alt="ChillMac"/>
+  <img src="https://idevtim.com/images/chillmac-icon.svg" width="80" align="middle" alt="ChillMac"/>
+</a>
+<a href="https://github.com/idevtim/chillmac">
+  <img src="https://img.shields.io/badge/macOS-ChillMac-000000?style=for-the-badge&logo=apple&logoColor=white" align="middle" alt="ChillMac"/>
 </a>
 
 **[ChillMac](https://github.com/idevtim/chillmac)** — Free, open-source macOS menu bar app for system monitoring and fan control. Real-time CPU/GPU temperatures, per-fan speed control, memory and battery health — all from the menu bar. Supports both Apple Silicon and Intel Macs.
@@ -157,10 +190,13 @@ class Developer extends Human
 
 ---
 
-### 04. Browser Extensions
+### 05. Browser Extensions
 
 <a href="https://github.com/idevtim/demarkup">
-  <img src="https://img.shields.io/badge/Chrome-DeMarkup-4285F4?style=for-the-badge&logo=googlechrome&logoColor=white" alt="DeMarkup"/>
+  <img src="https://idevtim.com/images/demarkup-icon.png" width="80" align="middle" alt="DeMarkup"/>
+</a>
+<a href="https://github.com/idevtim/demarkup">
+  <img src="https://img.shields.io/badge/Chrome-DeMarkup-4285F4?style=for-the-badge&logo=googlechrome&logoColor=white" align="middle" alt="DeMarkup"/>
 </a>
 
 **[DeMarkup](https://github.com/idevtim/demarkup)** — Free, open-source Chrome extension that converts any webpage into clean, well-structured Markdown with one click. Smart content extraction, three conversion modes (main content, full page, selection), and an LLM optimization mode that strips noise for AI consumption. Privacy-first — all processing happens locally.
