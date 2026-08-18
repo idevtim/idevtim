@@ -72,11 +72,19 @@ class Developer extends Human
 
 <br/>
 
+<a href="https://itsworthmore.com">
+  <img src="https://itsworthmore.com/static/images/favicon-v2-180.png" width="80" alt="ItsWorthMore.com"/>
+</a>
+
 **[ItsWorthMore.com](https://itsworthmore.com)** — A comprehensive e-commerce platform for buying and selling used electronics with advanced pricing algorithms and real-time valuations.
 
 `E-Commerce` `Laravel` `Real-Time Pricing`
 
 <br/>
+
+<a href="https://listergenius.com">
+  <img src="https://listergenius.com/favicon.png" width="80" alt="ListerGenius"/>
+</a>
 
 **[ListerGenius](https://listergenius.com)** — Intelligent listing optimization platform that helps businesses maximize their online presence and sales conversion rates.
 
