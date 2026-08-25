@@ -66,7 +66,7 @@ class Developer extends Human
   <img src="assets/icons/lastseenup.png" width="80" alt="Last Seen Up"/>
 </a>
 
-**[Last Seen Up](https://lastseenup.com)** <img src="https://img.shields.io/badge/Live-06B6D4?style=flat-square&labelColor=0D1117" alt="Live"/> — Uptime, heartbeat, SSL and domain monitoring that double-checks every failure before it wakes you. Watches sites, ports, DNS, certificates, domain registrations and cron jobs from multiple regions, confirms a failure across regions before opening an incident, then escalates from a Time Sensitive push to a phone call until somebody acknowledges. Native iPhone, iPad and Apple Watch app with Live Activities counting the outage on the lock screen, widgets and complications — plus a web dashboard for the morning after.
+**[Last Seen Up](https://lastseenup.com)** — Uptime, heartbeat, SSL and domain monitoring that double-checks every failure before it wakes you. Watches sites, ports, DNS, certificates, domain registrations and cron jobs from multiple regions, confirms a failure across regions before opening an incident, then escalates from a Time Sensitive push to a phone call until somebody acknowledges. Native iPhone, iPad and Apple Watch app with Live Activities counting the outage on the lock screen, widgets and complications — plus a web dashboard for the morning after.
 
 `Laravel` `React` `SwiftUI` `watchOS` `Multi-Region` `APNs` `Live Activities`
 
