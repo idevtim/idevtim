@@ -163,6 +163,22 @@ class Developer extends Human
 
 ### 04. Desktop Apps
 
+<a href="https://tryisleta.com">
+  <img src="assets/icons/isleta.png" width="80" align="middle" alt="Isleta"/>
+</a>
+<a href="https://github.com/idevtim/isleta">
+  <img src="https://img.shields.io/badge/macOS-Isleta-000000?style=for-the-badge&logo=apple&logoColor=white" align="middle" alt="Isleta"/>
+</a>
+<a href="https://github.com/idevtim/isleta/blob/main/LICENSE">
+  <img src="https://img.shields.io/badge/license-MIT-34C759?style=for-the-badge" align="middle" alt="MIT License"/>
+</a>
+
+**[Isleta](https://tryisleta.com)** — Free, open-source Dynamic Island for the Mac. Turns the MacBook notch into a live surface: your next meeting and the weather, full music transport with artwork and a queue, AirPods battery on connect, timers, volume and brightness, and a drop shelf that converts and transcribes files on device. Rain falls inside the island. No account, no telemetry, and exactly two network requests — both switchable. Source at [idevtim/isleta](https://github.com/idevtim/isleta).
+
+`Swift` `SwiftUI` `AppKit` `macOS 26+` `WeatherKit` `Sparkle` `Open Source`
+
+<br/>
+
 <a href="https://lunopeak.com">
   <img src="assets/icons/lunopeak.png" width="80" align="middle" alt="LunoPeak"/>
 </a>
