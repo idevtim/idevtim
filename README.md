@@ -207,14 +207,17 @@ class Developer extends Human
 
 ### 05. Browser Extensions
 
-<a href="https://github.com/idevtim/demarkup">
+<a href="https://chromewebstore.google.com/detail/demarkup/dmajejnedpjiecfnpmmemkgnkideecfg">
   <img src="assets/icons/demarkup.png" width="80" align="middle" alt="DeMarkup"/>
 </a>
-<a href="https://github.com/idevtim/demarkup">
+<a href="https://chromewebstore.google.com/detail/demarkup/dmajejnedpjiecfnpmmemkgnkideecfg">
   <img src="https://img.shields.io/badge/Chrome-DeMarkup-4285F4?style=for-the-badge&logo=googlechrome&logoColor=white" align="middle" alt="DeMarkup"/>
 </a>
+<a href="https://github.com/idevtim/demarkup">
+  <img src="https://img.shields.io/badge/GitHub-Source-181717?style=for-the-badge&logo=github&logoColor=white" align="middle" alt="DeMarkup source"/>
+</a>
 
-**[DeMarkup](https://github.com/idevtim/demarkup)** — Free, open-source Chrome extension that converts any webpage into clean, well-structured Markdown with one click. Smart content extraction, three conversion modes (main content, full page, selection), and an LLM optimization mode that strips noise for AI consumption. Privacy-first — all processing happens locally.
+**[DeMarkup](https://chromewebstore.google.com/detail/demarkup/dmajejnedpjiecfnpmmemkgnkideecfg)** — Free, open-source Chrome extension that converts any webpage into clean, well-structured Markdown with one click. Smart content extraction, three conversion modes (main content, full page, selection), and an LLM optimization mode that strips noise for AI consumption. Privacy-first — all processing happens locally. Source at [idevtim/demarkup](https://github.com/idevtim/demarkup).
 
 `Chrome Extension` `Manifest V3` `Turndown.js` `Open Source`
 
