@@ -114,7 +114,7 @@ class Developer extends Human
   <img src="https://img.shields.io/badge/iOS-LunoDB%20Mobile-06B6D4?style=for-the-badge&logo=apple&logoColor=white" align="middle" alt="LunoDB Mobile"/>
 </a>
 
-**[LunoDB Mobile](https://apps.apple.com/us/app/lunodb/id6756377885)** — Database management from your pocket. Browse, query, and manage MySQL, PostgreSQL, MariaDB, SQL Server, and SQLite databases from your phone or tablet. Features an AI assistant, biometric authentication, chart visualizations, and QR code scanning to import connections from the desktop app.
+**[LunoDB Mobile](https://apps.apple.com/us/app/lunodb/id6756377885)** — Database management from your pocket. Browse, query, and manage MySQL, PostgreSQL, MariaDB, MongoDB, SQLite, Turso, and SQL Server databases from your phone or tablet. Features an AI assistant, biometric authentication, chart visualizations, and QR code scanning to import connections from the desktop app.
 
 `React Native` `Expo` `TypeScript` `AI Assistant` `Biometric Auth` `iPad Optimized`
 
@@ -142,7 +142,7 @@ class Developer extends Human
   <img src="https://img.shields.io/badge/iOS-Cage%20Break%3A%20Rescue%20Run-34C759?style=for-the-badge&logo=apple&logoColor=white" align="middle" alt="Cage Break: Rescue Run"/>
 </a>
 
-**[Cage Break: Rescue Run](https://apps.apple.com/us/app/cage-break-rescue-run/id6786849290)** — A cozy brick-breaker with an animal-rescue heart. Fire salvos of balls to free caged animals before they cross the danger line. Five hand-themed rescue worlds with 20 species, three difficulties, a persistent Sanctuary, a coin shop, 25 app icons, and optional Game Center leaderboards. Fully playable offline — no account, no ads, no analytics.
+**[Cage Break: Rescue Run](https://apps.apple.com/us/app/cage-break-rescue-run/id6786849290)** — A cozy brick-breaker with an animal-rescue heart. Fire salvos of balls to free caged animals before they cross the danger line. Ten hand-themed rescue worlds with 40 species, three difficulties, a persistent Sanctuary, a coin shop, 50 app icons, and optional Game Center leaderboards. Fully playable offline — no account, no ads, no analytics.
 
 `SwiftUI` `SpriteKit` `iOS 17+` `Game Center` `StoreKit 2` `Universal`
 
