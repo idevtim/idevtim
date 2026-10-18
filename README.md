@@ -31,12 +31,13 @@
 </p>
 
 <p>
+  <a href="https://idevtim.github.io/zenfulyouth/"><picture><source media="(prefers-color-scheme: light)" srcset="assets/readme/card-zenful-youth-light.svg"><img src="assets/readme/card-zenful-youth.svg" width="32%" alt="Zenful Youth (iOS) — Guided meditations written on device for whatever's on your mind, read by a calm voice."/></picture></a>
   <a href="https://apps.apple.com/us/app/cage-break-rescue-run/id6786849290"><picture><source media="(prefers-color-scheme: light)" srcset="assets/readme/card-cage-break-light.svg"><img src="assets/readme/card-cage-break.svg" width="32%" alt="Cage Break (Game) — A cozy brick-breaker with an animal-rescue heart. 10 worlds, 40 species, no ads."/></picture></a>
   <a href="https://apps.apple.com/us/app/piece-of-mind-picture-puzzles/id6792975520"><picture><source media="(prefers-color-scheme: light)" srcset="assets/readme/card-piece-of-mind-light.svg"><img src="assets/readme/card-piece-of-mind.svg" width="32%" alt="Piece of Mind (Game) — A calm jigsaw built from your own photos. Offline and private."/></picture></a>
-  <a href="https://lunopeak.com"><picture><source media="(prefers-color-scheme: light)" srcset="assets/readme/card-lunopeak-light.svg"><img src="assets/readme/card-lunopeak.svg" width="32%" alt="LunoPeak (Desktop) — Local-first dashboard for every Claude Code, Codex and Cursor session — spend, budgets, replay."/></picture></a>
 </p>
 
 <p>
+  <a href="https://lunopeak.com"><picture><source media="(prefers-color-scheme: light)" srcset="assets/readme/card-lunopeak-light.svg"><img src="assets/readme/card-lunopeak.svg" width="32%" alt="LunoPeak (Desktop) — Local-first dashboard for every Claude Code, Codex and Cursor session — spend, budgets, replay."/></picture></a>
   <a href="https://github.com/idevtim/chillmac"><picture><source media="(prefers-color-scheme: light)" srcset="assets/readme/card-chillmac-light.svg"><img src="assets/readme/card-chillmac.svg" width="32%" alt="ChillMac (macOS) — Menu bar system monitor and fan control for Apple Silicon and Intel."/></picture></a>
   <a href="https://chromewebstore.google.com/detail/demarkup/dmajejnedpjiecfnpmmemkgnkideecfg"><picture><source media="(prefers-color-scheme: light)" srcset="assets/readme/card-demarkup-light.svg"><img src="assets/readme/card-demarkup.svg" width="32%" alt="DeMarkup (Chrome) — Any webpage to clean Markdown in one click — with an LLM-ready mode."/></picture></a>
 </p>

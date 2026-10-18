@@ -149,6 +149,19 @@
       ]
     },
     {
+      "slug": "zenful-youth",
+      "name": "Zenful Youth",
+      "url": "https://idevtim.github.io/zenfulyouth/",
+      "icon": "assets/icons/zenful-youth.png",
+      "platform": "iOS",
+      "accent": "v",
+      "desc": "Guided meditations written on device for whatever's on your mind, read by a calm voice.",
+      "tags": [
+        "SwiftUI",
+        "Foundation Models"
+      ]
+    },
+    {
       "slug": "cage-break",
       "name": "Cage Break",
       "url": "https://apps.apple.com/us/app/cage-break-rescue-run/id6786849290",
