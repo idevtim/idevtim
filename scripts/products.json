@@ -9,17 +9,17 @@
       "accent": "t",
       "desc": "Query any database in plain English — MySQL, Postgres, MongoDB and five more.",
       "tags": [
-        "Tauri",
+        "Electron",
         "React",
         "AI"
       ],
       "featured": {
         "shot": "assets/shots/lunodb.png",
         "kicker": "Desktop · iOS · 8 AI providers",
-        "desc": "The AI-powered database client for MySQL, Postgres, MongoDB and more. Monaco SQL editor with IntelliSense, SSH tunneling, charts and plain-English queries — on desktop and in your pocket. 90+ releases, 400+ features, built in 10 months.",
+        "desc": "The AI-powered database client for MySQL, Postgres, MongoDB and more. Monaco SQL editor with IntelliSense, SSH tunneling, charts and plain-English queries — on desktop and in your pocket. 90+ releases, 400+ features, built in just over a year.",
         "tags": [
           [
-            "Tauri",
+            "Electron",
             "t"
           ],
           [
@@ -52,7 +52,7 @@
       "featured": {
         "shot": "assets/shots/lastseenup.png",
         "kicker": "Web · iOS · watchOS",
-        "desc": "Uptime, heartbeat, SSL and domain monitoring that confirms a failure across regions before it wakes you — then escalates from a Time Sensitive push to a phone call. Live Activities count the outage on your lock screen.",
+        "desc": "Uptime, heartbeat, SSL and domain monitoring that confirms a failure over consecutive checks before it wakes you — then escalates from a Time Sensitive push to a phone call. Live Activities count the outage on your lock screen.",
         "tags": [
           [
             "Laravel",
@@ -116,10 +116,10 @@
       "icon": "assets/icons/itsworthmore.png",
       "platform": "Web",
       "accent": "t",
-      "desc": "E-commerce for buying and selling used electronics with real-time valuations.",
+      "desc": "Trade-in and buyback platform for used electronics — instant quotes and fast payouts.",
       "tags": [
         "Laravel",
-        "E-Commerce"
+        "reCommerce"
       ]
     },
     {
@@ -129,7 +129,7 @@
       "icon": "assets/icons/listergenius.png",
       "platform": "SaaS",
       "accent": "v",
-      "desc": "Listing optimization that maximizes online presence and conversion.",
+      "desc": "Inventory, listing and order management for resellers — syncs eBay, Amazon and Walmart.",
       "tags": [
         "Laravel",
         "SaaS"
@@ -181,7 +181,7 @@
       "icon": "assets/icons/lunopeak.png",
       "platform": "Desktop",
       "accent": "y",
-      "desc": "Local-first dashboard for every Claude Code and Codex session — spend, budgets, replay.",
+      "desc": "Local-first dashboard for every Claude Code, Codex and Cursor session — spend, budgets, replay.",
       "tags": [
         "Rust",
         "Tauri 2"

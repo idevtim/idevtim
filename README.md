@@ -10,9 +10,9 @@
 
 <picture><source media="(prefers-color-scheme: light)" srcset="assets/readme/h-featured-light.svg"><img src="assets/readme/h-featured.svg" width="100%" alt="01. Featured work"/></picture>
 
-<a href="https://lunodb.app"><picture><source media="(prefers-color-scheme: light)" srcset="assets/readme/featured-lunodb-light.svg"><img src="assets/readme/featured-lunodb.svg" width="100%" alt="LunoDB — Desktop · iOS · 8 AI providers. The AI-powered database client for MySQL, Postgres, MongoDB and more. Monaco SQL editor with IntelliSense, SSH tunneling, charts and plain-English queries — on desktop and in your pocket. 90+ releases, 400+ features, built in 10 months."/></picture></a>
+<a href="https://lunodb.app"><picture><source media="(prefers-color-scheme: light)" srcset="assets/readme/featured-lunodb-light.svg"><img src="assets/readme/featured-lunodb.svg" width="100%" alt="LunoDB — Desktop · iOS · 8 AI providers. The AI-powered database client for MySQL, Postgres, MongoDB and more. Monaco SQL editor with IntelliSense, SSH tunneling, charts and plain-English queries — on desktop and in your pocket. 90+ releases, 400+ features, built in just over a year."/></picture></a>
 
-<a href="https://lastseenup.com"><picture><source media="(prefers-color-scheme: light)" srcset="assets/readme/featured-lastseenup-light.svg"><img src="assets/readme/featured-lastseenup.svg" width="100%" alt="Last Seen Up — Web · iOS · watchOS. Uptime, heartbeat, SSL and domain monitoring that confirms a failure across regions before it wakes you — then escalates from a Time Sensitive push to a phone call. Live Activities count the outage on your lock screen."/></picture></a>
+<a href="https://lastseenup.com"><picture><source media="(prefers-color-scheme: light)" srcset="assets/readme/featured-lastseenup-light.svg"><img src="assets/readme/featured-lastseenup.svg" width="100%" alt="Last Seen Up — Web · iOS · watchOS. Uptime, heartbeat, SSL and domain monitoring that confirms a failure over consecutive checks before it wakes you — then escalates from a Time Sensitive push to a phone call. Live Activities count the outage on your lock screen."/></picture></a>
 
 <a href="https://tryisleta.com"><picture><source media="(prefers-color-scheme: light)" srcset="assets/readme/featured-isleta-light.svg"><img src="assets/readme/featured-isleta.svg" width="100%" alt="Isleta — macOS · Open source · MIT. A free Dynamic Island for the Mac notch: next meeting, weather, music, AirPods battery, timers and a drop shelf that converts and transcribes on device. Rain falls inside the island. No account, no telemetry."/></picture></a>
 
@@ -25,15 +25,15 @@
 </p>
 
 <p>
-  <a href="https://itsworthmore.com"><picture><source media="(prefers-color-scheme: light)" srcset="assets/readme/card-itsworthmore-light.svg"><img src="assets/readme/card-itsworthmore.svg" width="32%" alt="ItsWorthMore (Web) — E-commerce for buying and selling used electronics with real-time valuations."/></picture></a>
-  <a href="https://listergenius.com"><picture><source media="(prefers-color-scheme: light)" srcset="assets/readme/card-listergenius-light.svg"><img src="assets/readme/card-listergenius.svg" width="32%" alt="ListerGenius (SaaS) — Listing optimization that maximizes online presence and conversion."/></picture></a>
+  <a href="https://itsworthmore.com"><picture><source media="(prefers-color-scheme: light)" srcset="assets/readme/card-itsworthmore-light.svg"><img src="assets/readme/card-itsworthmore.svg" width="32%" alt="ItsWorthMore (Web) — Trade-in and buyback platform for used electronics — instant quotes and fast payouts."/></picture></a>
+  <a href="https://listergenius.com"><picture><source media="(prefers-color-scheme: light)" srcset="assets/readme/card-listergenius-light.svg"><img src="assets/readme/card-listergenius.svg" width="32%" alt="ListerGenius (SaaS) — Inventory, listing and order management for resellers — syncs eBay, Amazon and Walmart."/></picture></a>
   <a href="https://apps.apple.com/us/app/feevio/id6759834831"><picture><source media="(prefers-color-scheme: light)" srcset="assets/readme/card-feevio-light.svg"><img src="assets/readme/card-feevio.svg" width="32%" alt="Feevio (iOS) — 10 financial calculators for taxes, margins, fees and tips — with marketplace presets."/></picture></a>
 </p>
 
 <p>
   <a href="https://apps.apple.com/us/app/cage-break-rescue-run/id6786849290"><picture><source media="(prefers-color-scheme: light)" srcset="assets/readme/card-cage-break-light.svg"><img src="assets/readme/card-cage-break.svg" width="32%" alt="Cage Break (Game) — A cozy brick-breaker with an animal-rescue heart. 10 worlds, 40 species, no ads."/></picture></a>
   <a href="https://apps.apple.com/us/app/piece-of-mind-picture-puzzles/id6792975520"><picture><source media="(prefers-color-scheme: light)" srcset="assets/readme/card-piece-of-mind-light.svg"><img src="assets/readme/card-piece-of-mind.svg" width="32%" alt="Piece of Mind (Game) — A calm jigsaw built from your own photos. Offline and private."/></picture></a>
-  <a href="https://lunopeak.com"><picture><source media="(prefers-color-scheme: light)" srcset="assets/readme/card-lunopeak-light.svg"><img src="assets/readme/card-lunopeak.svg" width="32%" alt="LunoPeak (Desktop) — Local-first dashboard for every Claude Code and Codex session — spend, budgets, replay."/></picture></a>
+  <a href="https://lunopeak.com"><picture><source media="(prefers-color-scheme: light)" srcset="assets/readme/card-lunopeak-light.svg"><img src="assets/readme/card-lunopeak.svg" width="32%" alt="LunoPeak (Desktop) — Local-first dashboard for every Claude Code, Codex and Cursor session — spend, budgets, replay."/></picture></a>
 </p>
 
 <p>
