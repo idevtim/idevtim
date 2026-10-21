@@ -194,10 +194,10 @@
       "icon": "assets/icons/lunopeak.png",
       "platform": "Desktop",
       "accent": "y",
-      "desc": "Local-first dashboard for every Claude Code, Codex and Cursor session — spend, budgets, replay.",
+      "desc": "Local-first dashboard for every Claude Code, Codex and Cursor session. Free and open source.",
       "tags": [
         "Rust",
-        "Tauri 2"
+        "MIT"
       ]
     },
     {

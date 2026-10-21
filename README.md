@@ -37,7 +37,7 @@
 </p>
 
 <p>
-  <a href="https://lunopeak.com"><picture><source media="(prefers-color-scheme: light)" srcset="assets/readme/card-lunopeak-light.svg"><img src="assets/readme/card-lunopeak.svg" width="32%" alt="LunoPeak (Desktop) — Local-first dashboard for every Claude Code, Codex and Cursor session — spend, budgets, replay."/></picture></a>
+  <a href="https://lunopeak.com"><picture><source media="(prefers-color-scheme: light)" srcset="assets/readme/card-lunopeak-light.svg"><img src="assets/readme/card-lunopeak.svg" width="32%" alt="LunoPeak (Desktop) — Local-first dashboard for every Claude Code, Codex and Cursor session. Free and open source."/></picture></a>
   <a href="https://github.com/idevtim/chillmac"><picture><source media="(prefers-color-scheme: light)" srcset="assets/readme/card-chillmac-light.svg"><img src="assets/readme/card-chillmac.svg" width="32%" alt="ChillMac (macOS) — Menu bar system monitor and fan control for Apple Silicon and Intel."/></picture></a>
   <a href="https://chromewebstore.google.com/detail/demarkup/dmajejnedpjiecfnpmmemkgnkideecfg"><picture><source media="(prefers-color-scheme: light)" srcset="assets/readme/card-demarkup-light.svg"><img src="assets/readme/card-demarkup.svg" width="32%" alt="DeMarkup (Chrome) — Any webpage to clean Markdown in one click — with an LLM-ready mode."/></picture></a>
 </p>
