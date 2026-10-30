@@ -207,7 +207,7 @@
       "icon": "assets/icons/sift.png",
       "platform": "Desktop",
       "accent": "t",
-      "desc": "Coming soon: see how much disk space you can safely free up, with 30 days to undo it.",
+      "desc": "See how much disk space you can safely free up, with 30 days to undo anything it removes.",
       "tags": [
         "Rust",
         "Tauri"

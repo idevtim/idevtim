@@ -38,7 +38,7 @@
 
 <p>
   <a href="https://lunopeak.com"><picture><source media="(prefers-color-scheme: light)" srcset="assets/readme/card-lunopeak-light.svg"><img src="assets/readme/card-lunopeak.svg" width="32%" alt="LunoPeak (Desktop) — Local-first dashboard for every Claude Code, Codex and Cursor session. Free and open source."/></picture></a>
-  <a href="https://github.com/idevtim/sift"><picture><source media="(prefers-color-scheme: light)" srcset="assets/readme/card-sift-light.svg"><img src="assets/readme/card-sift.svg" width="32%" alt="Sift (Desktop) — Coming soon: see how much disk space you can safely free up, with 30 days to undo it."/></picture></a>
+  <a href="https://github.com/idevtim/sift"><picture><source media="(prefers-color-scheme: light)" srcset="assets/readme/card-sift-light.svg"><img src="assets/readme/card-sift.svg" width="32%" alt="Sift (Desktop) — See how much disk space you can safely free up, with 30 days to undo anything it removes."/></picture></a>
   <a href="https://github.com/idevtim/chillmac"><picture><source media="(prefers-color-scheme: light)" srcset="assets/readme/card-chillmac-light.svg"><img src="assets/readme/card-chillmac.svg" width="32%" alt="ChillMac (macOS) — Menu bar system monitor and fan control for Apple Silicon and Intel."/></picture></a>
 </p>
 
