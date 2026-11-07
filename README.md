@@ -46,6 +46,20 @@
   <a href="https://chromewebstore.google.com/detail/demarkup/dmajejnedpjiecfnpmmemkgnkideecfg"><picture><source media="(prefers-color-scheme: light)" srcset="assets/readme/card-demarkup-light.svg"><img src="assets/readme/card-demarkup.svg" width="32%" alt="DeMarkup (Chrome) — Any webpage to clean Markdown in one click — with an LLM-ready mode."/></picture></a>
 </p>
 
+<details>
+<summary>Install the Mac apps with Homebrew</summary>
+
+```sh
+brew install --cask idevtim/tap/lunodb    # LunoDB
+brew install --cask idevtim/tap/isleta    # Isleta
+brew install --cask idevtim/tap/lunopeak  # LunoPeak
+brew install --cask idevtim/tap/sift      # Sift
+brew install --cask idevtim/tap/chillmac  # ChillMac
+```
+
+Each one updates itself afterwards. Casks live in [idevtim/homebrew-tap](https://github.com/idevtim/homebrew-tap).
+</details>
+
 <picture><source media="(prefers-color-scheme: light)" srcset="assets/readme/h-about-light.svg"><img src="assets/readme/h-about.svg" width="100%" alt="03. About me"/></picture>
 
 <picture><source media="(prefers-color-scheme: light)" srcset="assets/readme/about-light.svg"><img src="assets/readme/about.svg" width="100%" alt="class Developer extends Human { $name = 'Timothy Murphy'; $role = 'Full Stack Developer'; $years = 15; getCurrentFocus(): 'You bring the vision. I handle the code.' } — photo of Timothy, currently available"/></picture>

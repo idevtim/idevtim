@@ -6,6 +6,7 @@
       "url": "https://lunodb.app",
       "icon": "assets/icons/lunodb.png",
       "platform": "Desktop",
+      "cask": "lunodb",
       "accent": "t",
       "desc": "Query any database in plain English — MySQL, Postgres, MongoDB and five more.",
       "tags": [
@@ -79,6 +80,7 @@
       "url": "https://tryisleta.com",
       "icon": "assets/icons/isleta.png",
       "platform": "macOS",
+      "cask": "isleta",
       "accent": "y",
       "desc": "The Dynamic Island for your Mac notch. Free and open source.",
       "tags": [
@@ -193,6 +195,7 @@
       "url": "https://lunopeak.com",
       "icon": "assets/icons/lunopeak.png",
       "platform": "Desktop",
+      "cask": "lunopeak",
       "accent": "y",
       "desc": "Local-first dashboard for every Claude Code, Codex and Cursor session. Free and open source.",
       "tags": [
@@ -206,6 +209,7 @@
       "url": "https://github.com/idevtim/sift",
       "icon": "assets/icons/sift.png",
       "platform": "Desktop",
+      "cask": "sift",
       "accent": "t",
       "desc": "See how much disk space you can safely free up, with 30 days to undo. Free and open source.",
       "tags": [
@@ -219,6 +223,7 @@
       "url": "https://github.com/idevtim/chillmac",
       "icon": "assets/icons/chillmac.png",
       "platform": "macOS",
+      "cask": "chillmac",
       "accent": "y",
       "desc": "Menu bar system monitor and fan control for Apple Silicon and Intel.",
       "tags": [
