@@ -27,7 +27,7 @@
 <p>
   <a href="https://itsworthmore.com"><picture><source media="(prefers-color-scheme: light)" srcset="assets/readme/card-itsworthmore-light.svg"><img src="assets/readme/card-itsworthmore.svg" width="32%" alt="ItsWorthMore (Web) — Trade-in and buyback platform for used electronics — instant quotes and fast payouts."/></picture></a>
   <a href="https://listergenius.com"><picture><source media="(prefers-color-scheme: light)" srcset="assets/readme/card-listergenius-light.svg"><img src="assets/readme/card-listergenius.svg" width="32%" alt="ListerGenius (SaaS) — Inventory, listing and order management for resellers — syncs eBay, Amazon and Walmart."/></picture></a>
-  <a href="https://apps.apple.com/us/app/feevio/id6759834831"><picture><source media="(prefers-color-scheme: light)" srcset="assets/readme/card-feevio-light.svg"><img src="assets/readme/card-feevio.svg" width="32%" alt="Feevio (iOS) — 10 financial calculators for taxes, margins, fees and tips — with marketplace presets."/></picture></a>
+  <a href="https://apps.apple.com/us/app/feevio/id6759834831"><picture><source media="(prefers-color-scheme: light)" srcset="assets/readme/card-feevio-light.svg"><img src="assets/readme/card-feevio.svg" width="32%" alt="Feevio (iOS) — 10 pinnable calculators for taxes, margins, fees and tips — with marketplace presets."/></picture></a>
 </p>
 
 <p>

@@ -142,7 +142,7 @@
       "icon": "assets/icons/feevio.png",
       "platform": "iOS",
       "accent": "p",
-      "desc": "10 financial calculators for taxes, margins, fees and tips — with marketplace presets.",
+      "desc": "10 pinnable calculators for taxes, margins, fees and tips — with marketplace presets.",
       "tags": [
         "SwiftUI",
         "watchOS"
