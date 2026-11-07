@@ -15,8 +15,8 @@
       ],
       "featured": {
         "shot": "assets/shots/lunodb.png",
-        "kicker": "Desktop · iOS · 8 AI providers",
-        "desc": "The AI-powered database client for MySQL, Postgres, MongoDB and more. Monaco SQL editor with IntelliSense, SSH tunneling, charts and plain-English queries — on desktop and in your pocket. 90+ releases, 400+ features, built in just over a year.",
+        "kicker": "Desktop 2 · iOS 2.0 · 8 AI providers",
+        "desc": "LunoDB 2 rebuilds the AI database client from the ground up, on desktop and on iPhone and iPad. Query MySQL, Postgres, MongoDB and five more in plain English, privately with Ollama or Apple Intelligence. 90+ releases, 400+ features, built in just over a year.",
         "tags": [
           [
             "Electron",

@@ -10,7 +10,7 @@
 
 <picture><source media="(prefers-color-scheme: light)" srcset="assets/readme/h-featured-light.svg"><img src="assets/readme/h-featured.svg" width="100%" alt="01. Featured work"/></picture>
 
-<a href="https://lunodb.app"><picture><source media="(prefers-color-scheme: light)" srcset="assets/readme/featured-lunodb-light.svg"><img src="assets/readme/featured-lunodb.svg" width="100%" alt="LunoDB — Desktop · iOS · 8 AI providers. The AI-powered database client for MySQL, Postgres, MongoDB and more. Monaco SQL editor with IntelliSense, SSH tunneling, charts and plain-English queries — on desktop and in your pocket. 90+ releases, 400+ features, built in just over a year."/></picture></a>
+<a href="https://lunodb.app"><picture><source media="(prefers-color-scheme: light)" srcset="assets/readme/featured-lunodb-light.svg"><img src="assets/readme/featured-lunodb.svg" width="100%" alt="LunoDB — Desktop 2 · iOS 2.0 · 8 AI providers. LunoDB 2 rebuilds the AI database client from the ground up, on desktop and on iPhone and iPad. Query MySQL, Postgres, MongoDB and five more in plain English, privately with Ollama or Apple Intelligence. 90+ releases, 400+ features, built in just over a year."/></picture></a>
 
 <a href="https://lastseenup.com"><picture><source media="(prefers-color-scheme: light)" srcset="assets/readme/featured-lastseenup-light.svg"><img src="assets/readme/featured-lastseenup.svg" width="100%" alt="Last Seen Up — Web · iOS · watchOS. Uptime, heartbeat, SSL and domain monitoring that confirms a failure over consecutive checks before it wakes you — then escalates from a Time Sensitive push to a phone call. Live Activities count the outage on your lock screen."/></picture></a>
 
