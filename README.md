@@ -10,7 +10,7 @@
 
 <picture><source media="(prefers-color-scheme: light)" srcset="assets/readme/h-featured-light.svg"><img src="assets/readme/h-featured.svg" width="100%" alt="01. Featured work"/></picture>
 
-<a href="https://lunodb.app"><picture><source media="(prefers-color-scheme: light)" srcset="assets/readme/featured-lunodb-light.svg"><img src="assets/readme/featured-lunodb.svg" width="100%" alt="LunoDB — Desktop 2 · iOS 2.0 · 8 AI providers. LunoDB 2 rebuilds the AI database client from the ground up, on desktop and on iPhone and iPad. Query MySQL, Postgres, MongoDB and five more in plain English, privately with Ollama or Apple Intelligence. 90+ releases, 400+ features, built in just over a year."/></picture></a>
+<a href="https://lunodb.app"><picture><source media="(prefers-color-scheme: light)" srcset="assets/readme/featured-lunodb-light.svg"><img src="assets/readme/featured-lunodb.svg" width="100%" alt="LunoDB — Desktop 2.3 · iOS 2.0 · 23 databases. LunoDB 2 rebuilds the AI database client from the ground up, on desktop and on iPhone and iPad. Query MySQL, Postgres, MongoDB and 20 more in plain English, privately with Ollama or Apple Intelligence. 100+ releases, 400+ features, built in just over a year."/></picture></a>
 
 <a href="https://lastseenup.com"><picture><source media="(prefers-color-scheme: light)" srcset="assets/readme/featured-lastseenup-light.svg"><img src="assets/readme/featured-lastseenup.svg" width="100%" alt="Last Seen Up — Web · iOS · watchOS. Uptime, heartbeat, SSL and domain monitoring that confirms a failure over consecutive checks before it wakes you — then escalates from a Time Sensitive push to a phone call. Live Activities count the outage on your lock screen."/></picture></a>
 
@@ -19,7 +19,7 @@
 <picture><source media="(prefers-color-scheme: light)" srcset="assets/readme/h-everything-light.svg"><img src="assets/readme/h-everything.svg" width="100%" alt="02. Everything I've built"/></picture>
 
 <p>
-  <a href="https://lunodb.app"><picture><source media="(prefers-color-scheme: light)" srcset="assets/readme/card-lunodb-light.svg"><img src="assets/readme/card-lunodb.svg" width="32%" alt="LunoDB (Desktop) — Query any database in plain English — MySQL, Postgres, MongoDB and five more."/></picture></a>
+  <a href="https://lunodb.app"><picture><source media="(prefers-color-scheme: light)" srcset="assets/readme/card-lunodb-light.svg"><img src="assets/readme/card-lunodb.svg" width="32%" alt="LunoDB (Desktop) — Query any database in plain English — MySQL, Postgres, MongoDB and 20 more."/></picture></a>
   <a href="https://lastseenup.com"><picture><source media="(prefers-color-scheme: light)" srcset="assets/readme/card-lastseenup-light.svg"><img src="assets/readme/card-lastseenup.svg" width="32%" alt="Last Seen Up (iOS) — Uptime, heartbeat, SSL and domain monitoring that double-checks before it wakes you."/></picture></a>
   <a href="https://tryisleta.com"><picture><source media="(prefers-color-scheme: light)" srcset="assets/readme/card-isleta-light.svg"><img src="assets/readme/card-isleta.svg" width="32%" alt="Isleta (macOS) — The Dynamic Island for your Mac notch. Free and open source."/></picture></a>
 </p>
