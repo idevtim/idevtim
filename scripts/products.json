@@ -211,7 +211,7 @@
       "platform": "Desktop",
       "cask": "sift",
       "accent": "t",
-      "desc": "See how much disk space you can safely free up, with 30 days to undo. Free and open source.",
+      "desc": "Safely free up disk space, including what AI coding tools leave behind. Free and open source.",
       "tags": [
         "Rust",
         "MIT"
