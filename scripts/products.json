@@ -16,7 +16,7 @@
       ],
       "featured": {
         "shot": "assets/shots/lunodb.png",
-        "kicker": "Desktop 2.7 · iOS 2.0 · 23 databases",
+        "kicker": "Desktop 2.8 · iOS 2.1 · 23 databases",
         "desc": "LunoDB 2 rebuilds the AI database client from the ground up, on desktop and on iPhone and iPad. Query MySQL, Postgres, MongoDB and 20 more in plain English, privately with Ollama or Apple Intelligence. 100+ releases, 400+ features, built in just over a year.",
         "tags": [
           [
