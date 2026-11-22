@@ -482,7 +482,8 @@ async function hero(productCount) {
   const stats = [
     ['< 48h', 'first draft'],
     ['15+', 'years building'],
-    [String(productCount), 'live products'],
+    // The site's hero number, set by hand in products.json; it counts more than the 13 catalog cards
+    [String(data.liveProducts ?? productCount), 'live products'],
   ];
   parts.push(`<rect x="0" y="${n2(stripTop)}" width="${W}" height="1" fill="${C.border}"/>`);
   stats.forEach(([v, l], i) => {
