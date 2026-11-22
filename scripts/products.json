@@ -8,7 +8,7 @@
       "platform": "Desktop",
       "cask": "lunodb",
       "accent": "t",
-      "desc": "Query any database in plain English — MySQL, Postgres, MongoDB and 20 more.",
+      "desc": "Query any database in plain English: MySQL, Postgres, MongoDB and 20 more.",
       "tags": [
         "Electron",
         "React",
@@ -53,7 +53,7 @@
       "featured": {
         "shot": "assets/shots/lastseenup.png",
         "kicker": "Web · iOS · watchOS",
-        "desc": "Uptime, heartbeat, SSL and domain monitoring that confirms a failure over consecutive checks before it wakes you — then escalates from a Time Sensitive push to a phone call. Live Activities count the outage on your lock screen.",
+        "desc": "Uptime, heartbeat, SSL and domain monitoring that confirms a failure over consecutive checks before it wakes you, then escalates from a Time Sensitive push to a phone call. Live Activities count the outage on your lock screen.",
         "tags": [
           [
             "Laravel",
@@ -113,12 +113,12 @@
     },
     {
       "slug": "itsworthmore",
-      "name": "ItsWorthMore",
+      "name": "ItsWorthMore.com",
       "url": "https://itsworthmore.com",
       "icon": "assets/icons/itsworthmore.png",
       "platform": "Web",
       "accent": "t",
-      "desc": "Trade-in and buyback platform for used electronics — instant quotes and fast payouts.",
+      "desc": "Trade-in and buyback platform for used electronics: instant quotes and fast payouts.",
       "tags": [
         "Laravel",
         "reCommerce"
@@ -131,11 +131,12 @@
       "icon": "assets/icons/listergenius.png",
       "platform": "SaaS",
       "accent": "v",
-      "desc": "Inventory, listing and order management for resellers — syncs eBay, Amazon and Walmart.",
+      "desc": "Inventory, listing and order management for resellers, syncing eBay, Amazon and Walmart.",
       "tags": [
         "Laravel",
         "SaaS"
-      ]
+      ],
+      "status": "Coming soon"
     },
     {
       "slug": "feevio",
@@ -144,7 +145,7 @@
       "icon": "assets/icons/feevio.png",
       "platform": "iOS",
       "accent": "p",
-      "desc": "10 pinnable calculators for taxes, margins, fees and tips — with marketplace presets.",
+      "desc": "10 pinnable calculators for taxes, margins, fees and tips, with marketplace presets.",
       "tags": [
         "SwiftUI",
         "watchOS"
@@ -161,7 +162,8 @@
       "tags": [
         "SwiftUI",
         "Foundation Models"
-      ]
+      ],
+      "status": "Coming soon"
     },
     {
       "slug": "cage-break",
@@ -170,7 +172,7 @@
       "icon": "assets/icons/cage-break.png",
       "platform": "Game",
       "accent": "g",
-      "desc": "A cozy brick-breaker with an animal-rescue heart. 10 worlds, 40 species, no ads.",
+      "desc": "A cozy brick-breaker with an animal-rescue heart. 10 worlds, 40 animals, no ads.",
       "tags": [
         "SpriteKit",
         "Game Center"
@@ -238,7 +240,7 @@
       "icon": "assets/icons/demarkup.png",
       "platform": "Chrome",
       "accent": "v",
-      "desc": "Any webpage to clean Markdown in one click — with an LLM-ready mode.",
+      "desc": "Any webpage to clean Markdown in one click, with an LLM-ready mode.",
       "tags": [
         "Manifest V3",
         "Open Source"

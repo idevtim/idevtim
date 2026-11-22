@@ -11,7 +11,14 @@ const ROOT = path.resolve(import.meta.dirname, '..');
 const OUT = path.join(ROOT, 'assets/readme');
 const data = JSON.parse(await fs.readFile(path.join(ROOT, 'scripts/products.json'), 'utf8'));
 
-const W = 880;
+// Desktop SVGs are 880 wide. Mobile variants (`-m`) are laid out for a ~340px column, which is
+// what GitHub gives a README on a phone (308px at a 390px viewport); README.md swaps them in
+// with a max-width <source>. `W` and `M` are switched per pass in the build loop.
+const DW = 880;
+const MW = 340;
+const MOBILE_MAX = 640;
+let W = DW;
+let M = false;
 
 // Every SVG is built once per theme; README.md swaps them with <picture> + prefers-color-scheme,
 // which GitHub resolves from the viewer's GitHub theme setting.
@@ -343,7 +350,7 @@ function keyframes(name, states, T, valueOf) {
 
 async function hero(productCount) {
   const doc = new Doc(W);
-  const P = 32;
+  const P = M ? 20 : 32;
   const parts = [];
 
   // Top row: logo + availability pill
@@ -355,7 +362,7 @@ async function hero(productCount) {
   parts.push(`<svg x="${P}" y="${P}" width="26" height="26" viewBox="0 0 48 48" fill="none">${logoSrc}</svg>`);
 
   const rowMid = P + 13;
-  const pillText = 'Full-stack developer · ready to build';
+  const pillText = M ? 'Ready to build' : 'Full-stack developer · ready to build';
   const pillLH = normalLH('mono', 11);
   const pillW = 1 + 11 + 7 + 8 + measure('mono', 11, pillText, 0.66) + 11 + 1;
   const pillH = pillLH + 12;
@@ -369,18 +376,19 @@ async function hero(productCount) {
   );
   doc.css.push('@keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}.pulse{animation:pulse 2s ease-in-out infinite}');
 
-  // H1 with typewriter
-  const h1Top = P + 26 + 40;
-  const ls = -1.6;
-  parts.push(doc.text('syne700', 80, 'Got an idea?', P, baseline('syne700', 80, h1Top, 80), { ls }));
-  const line2 = baseline('syne700', 80, h1Top + 80, 80);
-  parts.push(doc.text('syne700', 80, "I'll ", P, line2, { fill: C.teal, ls }));
-  const typeX = P + measure('syne700', 80, "I'll ", ls);
+  // H1 with typewriter. Mobile sizes it so the longest line ("I'll prototype it.") fits the column.
   const words = ['prototype it.', 'build it.', 'ship it.', 'scale it.'];
+  const HS = M ? Math.min(44, Math.floor(((W - P * 2 - 12) / measure('syne700', 100, "I'll " + words[0])) * 100)) : 80;
+  const h1Top = P + 26 + (M ? 28 : 40);
+  const ls = (-1.6 * HS) / 80;
+  parts.push(doc.text('syne700', HS, 'Got an idea?', P, baseline('syne700', HS, h1Top, HS), { ls }));
+  const line2 = baseline('syne700', HS, h1Top + HS, HS);
+  parts.push(doc.text('syne700', HS, "I'll ", P, line2, { fill: C.teal, ls }));
+  const typeX = P + measure('syne700', HS, "I'll ", ls);
   const { T, states } = typeTimeline(words);
   const dur = `${n2(T / 1000)}s`;
   const prefixW = words.map(w => {
-    const adv = advances('syne700', 80, w, ls);
+    const adv = advances('syne700', HS, w, ls);
     return adv.reduce((acc, a) => [...acc, acc.at(-1) + a], [0]);
   });
   words.forEach((w, wi) => {
@@ -392,7 +400,7 @@ async function hero(productCount) {
         `.${cls}{animation:${cls} ${dur} step-end infinite}`,
       );
       // Static state (reduced motion / no animation) shows "prototype it."
-      parts.push(doc.text('syne700', 80, ch, typeX + prefixW[wi][ci], line2, { fill: C.teal, attrs: ` class="${cls}" opacity="${wi === 0 ? 1 : 0}"` }));
+      parts.push(doc.text('syne700', HS, ch, typeX + prefixW[wi][ci], line2, { fill: C.teal, attrs: ` class="${cls}" opacity="${wi === 0 ? 1 : 0}"` }));
     });
   });
   const fullW = prefixW[0].at(-1);
@@ -402,13 +410,14 @@ async function hero(productCount) {
     `.cursor{animation:cpos ${dur} step-end infinite,blink 1s step-end infinite}`,
     '@media (prefers-reduced-motion:reduce){.pulse,.cursor,[class^="w"]{animation:none}}',
   );
-  parts.push(doc.text('syne400', 80, '|', typeX + fullW + 3.2, line2, { fill: C.teal, attrs: ' class="cursor"' }));
+  parts.push(doc.text('syne400', HS, '|', typeX + fullW + (3.2 * HS) / 80, line2, { fill: C.teal, attrs: ' class="cursor"' }));
 
   // Subline
-  let y = h1Top + 160 + 18;
-  const subLH = 26 * 1.35;
-  for (const line of wrap('serif', 26, 'From napkin sketch to working prototype — in under two days.', W - P * 2)) {
-    parts.push(doc.text('serif', 26, line, P, baseline('serif', 26, y, subLH), { fill: C.body }));
+  let y = h1Top + HS * 2 + (M ? 14 : 18);
+  const SS = M ? 19 : 26;
+  const subLH = SS * 1.35;
+  for (const line of wrap('serif', SS, 'From napkin sketch to working prototype in under two days.', W - P * 2)) {
+    parts.push(doc.text('serif', SS, line, P, baseline('serif', SS, y, subLH), { fill: C.body }));
     y += subLH;
   }
 
@@ -417,7 +426,7 @@ async function hero(productCount) {
   const reg = { key: 'inter400', fill: C.body };
   const bold = { key: 'inter600', fill: C.heading };
   const segs = [
-    { ...reg, text: 'Timothy Murphy — a full-stack developer who turns your vision into reality. Need a ' },
+    { ...reg, text: 'Timothy Murphy, a full-stack developer who turns your vision into reality. Need a ' },
     { ...bold, text: 'web app' },
     { ...reg, text: ', ' },
     { ...bold, text: 'mobile app' },
@@ -439,7 +448,7 @@ async function hero(productCount) {
   let lineW = 0;
   for (const wd of wordsB) {
     const ww = wordW(wd);
-    if (lines.at(-1).length && lineW + space + ww > 560) {
+    if (lines.at(-1).length && lineW + space + ww > (M ? W - P * 2 : 560)) {
       lines.push([]);
       lineW = 0;
     }
@@ -462,24 +471,26 @@ async function hero(productCount) {
   }
 
   // Stat strip
-  y += 36;
+  y += M ? 24 : 36;
   const stripTop = y;
-  const valLH = normalLH('syne700', 32);
-  const labLH = normalLH('mono', 11);
-  const stripH = 18 + valLH + labLH + 18;
+  const VS = M ? 24 : 32;
+  const LS = M ? 9 : 11;
+  const valLH = normalLH('syne700', VS);
+  const labLH = normalLH('mono', LS);
+  const stripH = (M ? 14 : 18) + valLH + labLH + (M ? 14 : 18);
   const colW = W / 3;
   const stats = [
     ['< 48h', 'first draft'],
-    ['15+', 'years shipping'],
+    ['15+', 'years building'],
     [String(productCount), 'live products'],
   ];
   parts.push(`<rect x="0" y="${n2(stripTop)}" width="${W}" height="1" fill="${C.border}"/>`);
   stats.forEach(([v, l], i) => {
-    const x = colW * i + 32;
+    const x = colW * i + (M ? 14 : 32);
     if (i) parts.push(`<rect x="${n2(colW * i - 1)}" y="${n2(stripTop)}" width="1" height="${n2(stripH)}" fill="${C.border}"/>`);
     parts.push(
-      doc.text('syne700', 32, v, x, baseline('syne700', 32, stripTop + 1 + 18, valLH)),
-      doc.text('mono', 11, l.toUpperCase(), x, baseline('mono', 11, stripTop + 1 + 18 + valLH, labLH), { fill: C.meta, ls: 0.88 }),
+      doc.text('syne700', VS, v, x, baseline('syne700', VS, stripTop + 1 + (M ? 14 : 18), valLH)),
+      doc.text('mono', LS, l.toUpperCase(), x, baseline('mono', LS, stripTop + 1 + (M ? 14 : 18) + valLH, labLH), { fill: C.meta, ls: M ? 0.5 : 0.88 }),
     );
   });
   doc.h = stripTop + 1 + stripH;
@@ -506,22 +517,71 @@ function header(num, title, { sub, divider = false } = {}) {
     );
     doc.add(`<rect x="0" y="12" width="${W}" height="1" fill="url(#${id})" opacity=".3"/>`);
   }
-  const top = 40;
-  const titleLH = normalLH('syne700', 32);
-  const base = baseline('syne700', 32, top, titleLH);
-  const numW = measure('mono', 14, num);
-  doc.add(doc.text('mono', 14, num, 0, base, { fill: C.teal }), doc.text('syne700', 32, title, numW + 12, base));
+  const top = M ? 32 : 40;
+  const TS = M ? 24 : 32;
+  const NS = M ? 12 : 14;
+  const titleLH = normalLH('syne700', TS);
+  const base = baseline('syne700', TS, top, titleLH);
+  const numW = measure('mono', NS, num);
+  doc.add(doc.text('mono', NS, num, 0, base, { fill: C.teal }), doc.text('syne700', TS, title, numW + (M ? 8 : 12), base));
   let y = top + titleLH;
   if (sub) {
-    const lh = normalLH('inter400', 14.5);
-    doc.add(doc.text('inter400', 14.5, sub, 0, baseline('inter400', 14.5, y + 6, lh), { fill: C.body }));
-    y += 6 + lh;
+    const SS = M ? 13.5 : 14.5;
+    const lh = M ? SS * 1.5 : normalLH('inter400', SS);
+    y += 6;
+    for (const line of wrap('inter400', SS, sub, W)) {
+      doc.add(doc.text('inter400', SS, line, 0, baseline('inter400', SS, y, lh), { fill: C.body }));
+      y += lh;
+    }
   }
   doc.h = y + 4;
   return { doc, bottom: y };
 }
 
+// Mobile: screenshot on top, copy underneath
+async function featuredMobile(p) {
+  const f = p.featured;
+  const doc = new Doc(W);
+  const pad = 20;
+  const innerW = W - pad * 2;
+  const shotH = Math.round(W * 0.56);
+  const parts = [];
+  let y = shotH + pad;
+
+  const tags = chipRow(doc, f.tags, pad, y, innerW, 6, (cx, cy, [n, k]) => chip(doc, 'mono', 11, n, cx, cy, { padX: 7, padY: 2, color: A[k][0], stroke: A[k][1] }));
+  parts.push(tags.svg);
+  y += tags.h + 14;
+
+  parts.push(await image(doc, p.icon, pad, y, 40, 40, 10));
+  parts.push(doc.text('syne700', 22, p.name, pad + 52, baseline('syne700', 22, y + 20 - normalLH('syne700', 22) / 2)));
+  y += 40 + 12;
+
+  const kLH = 10.5 * 1.5;
+  for (const line of wrap('mono', 10.5, f.kicker.toUpperCase(), innerW)) {
+    parts.push(doc.text('mono', 10.5, line, pad, baseline('mono', 10.5, y, kLH), { fill: C.meta, ls: 0.6 }));
+    y += kLH;
+  }
+  y += 10;
+
+  const dLH = 14.5 * 1.55;
+  for (const line of wrap('inter400', 14.5, f.desc, innerW)) {
+    parts.push(doc.text('inter400', 14.5, line, pad, baseline('inter400', 14.5, y, dLH), { fill: C.body }));
+    y += dLH;
+  }
+  y += 12;
+
+  const lLH = normalLH('inter600', 14);
+  parts.push(doc.text('inter600', 14, 'View live site ↗', pad, baseline('inter600', 14, y, lLH), { fill: C.teal }));
+  y += lLH + pad;
+
+  doc.h = y;
+  const shot = `${rect(0, 0, W, shotH, 0, `fill="${C.chip}"`)}<image href="${await imageURI(f.shot, W, shotH)}" width="${W}" height="${shotH}"/><rect x="0" y="${shotH - 1}" width="${W}" height="1" fill="${C.border}"/>`;
+  doc.add(cardFrame(doc, W, doc.h, 14, C.card, shot + parts.join('')));
+  return doc;
+}
+
 async function featured(p) {
+  if (M) return featuredMobile(p);
   const f = p.featured;
   const doc = new Doc(W);
   const colW = W / 2;
@@ -574,9 +634,11 @@ async function card(p, cardH) {
   const parts = [];
 
   parts.push(await image(doc, p.icon, pad, pad, 36, 36, 9));
-  parts.push(doc.text('syne700', 16, p.name, pad + 46, baseline('syne700', 16, pad + 18 - normalLH('syne700', 16) / 2)));
-  const label = p.platform.toUpperCase();
+  const label = (p.status ? `${p.platform} · soon` : p.platform).toUpperCase();
   const chipW = measure('mono', 10, label, 0.6) + 14;
+  // Long names (ItsWorthMore.com) shrink to clear the platform chip
+  const ns = Math.min(16, Math.floor(((CARD_W - pad * 2 - 46 - chipW - 8) / measure('syne700', 10, p.name)) * 100) / 10);
+  parts.push(doc.text('syne700', ns, p.name, pad + 46, baseline('syne700', ns, pad + 18 - normalLH('syne700', ns) / 2)));
   const chipH = normalLH('mono', 10) + 6;
   const c = chip(doc, 'mono', 10, label, CARD_W - pad - chipW, pad + 18 - chipH / 2, { padX: 7, padY: 3, ls: 0.6, color: A[p.accent][0], fill: A[p.accent][2] });
   parts.push(c.svg);
@@ -596,15 +658,39 @@ async function card(p, cardH) {
   return doc;
 }
 
+// Mobile: the card grid keeps width="32%" (about 100px on a phone), so each card becomes an
+// app-icon tile (icon, name, platform). The full description stays in the alt text.
+const TILE_W = 104;
+// Names wrap to two lines; one long word (ItsWorthMore.com) shrinks to fit instead
+const tileSize = p => Math.min(12.5, ...p.name.split(' ').map(w => Math.floor(((TILE_W - 12) / measure('syne700', 10, w)) * 100) / 10));
+const tileName = p => wrap('syne700', tileSize(p), p.name, TILE_W - 12);
+const tileHeight = products => Math.ceil(12 + 52 + 10 + Math.max(...products.map(p => tileName(p).length)) * 15 + 4 + normalLH('mono', 8.5) + 12);
+
+async function tile(p, tileH) {
+  const doc = new Doc(TILE_W, tileH);
+  const parts = [await image(doc, p.icon, (TILE_W - 52) / 2, 12, 52, 52, 12)];
+  let y = 12 + 52 + 10;
+  const ts = tileSize(p);
+  for (const line of tileName(p)) {
+    parts.push(doc.text('syne700', ts, line, (TILE_W - measure('syne700', ts, line)) / 2, baseline('syne700', ts, y, 15)));
+    y += 15;
+  }
+  const label = (p.status ? 'Soon' : p.platform).toUpperCase();
+  const lw = measure('mono', 8.5, label, 0.5);
+  parts.push(doc.text('mono', 8.5, label, (TILE_W - lw) / 2, baseline('mono', 8.5, tileH - 12 - normalLH('mono', 8.5)), { fill: A[p.accent][0], ls: 0.5 }));
+  doc.add(cardFrame(doc, TILE_W, tileH, 12, C.card, parts.join('')));
+  return doc;
+}
+
 async function about() {
   const doc = new Doc(W);
-  const gap = 16;
-  const colW = (W - gap) / 2;
+  const gap = M ? 12 : 16;
+  const colW = M ? W : (W - gap) / 2;
   const K = C.pink,
     Y = C.yellow,
     V = C.violet,
     S = C.teal,
-    M = C.tealHover,
+    MH = C.tealHover,
     D = C.code;
   const code = [
     [
@@ -645,7 +731,7 @@ async function about() {
     [
       ['  public function', K],
       [' ', D],
-      ['getCurrentFocus', M],
+      ['getCurrentFocus', MH],
       ['()', D],
     ],
     [['  {', D]],
@@ -667,7 +753,9 @@ async function about() {
   const barH = 10 + barLH + 10;
   const lineH = 12.5 * 1.75;
   const H = 1 + barH + 1 + 18 + code.length * lineH + 18 + 1;
-  doc.h = H;
+  // Mobile stacks the photo under the code window
+  const photoH = M ? Math.round(W * 0.85) : H;
+  doc.h = M ? H + gap + photoH : H;
   const charW = measure('mono', 12.5, 'x');
   const parts = [`<rect x="0" y="0" width="${n2(colW)}" height="${n2(barH + 1)}" fill="${C.bar}"/>`, `<rect x="0" y="${n2(barH + 1)}" width="${n2(colW)}" height="1" fill="${C.border}"/>`];
   const barMid = 1 + barH / 2;
@@ -687,14 +775,15 @@ async function about() {
   doc.add(`<g clip-path="url(#${clip})">${rect(0, 0, colW, H, 12, `fill="${C.card}"`)}${parts.join('')}</g>${border(0, 0, colW, H, 12, C.border)}`);
 
   // Photo
-  const px = colW + gap;
-  doc.add(rect(px, 0, colW, H, 12, `fill="${C.chip}"`), await image(doc, 'assets/profile.jpg', px, 0, colW, H, 12, { format: 'jpeg', position: 'centre' }), border(px, 0, colW, H, 12, C.border));
+  const px = M ? 0 : colW + gap;
+  const py = M ? H + gap : 0;
+  doc.add(rect(px, py, colW, photoH, 12, `fill="${C.chip}"`), await image(doc, 'assets/profile.jpg', px, py, colW, photoH, 12, { format: 'jpeg', position: 'centre' }), border(px, py, colW, photoH, 12, C.border));
   const pillText = 'Currently available';
   const pLH = normalLH('mono', 11);
   const pillH = pLH + 12;
   const pillW = 1 + 10 + 7 + 7 + measure('mono', 11, pillText) + 10 + 1;
   const pillX = px + 12;
-  const pillY = H - 12 - pillH;
+  const pillY = py + photoH - 12 - pillH;
   doc.add(
     rect(pillX, pillY, pillW, pillH, pillH / 2, `fill="${C.photoPill}"`),
     border(pillX, pillY, pillW, pillH, pillH / 2, C.border),
@@ -709,8 +798,8 @@ async function about() {
 function stack() {
   const { doc, bottom } = header('04.', 'What I build with');
   const techs = data.technologies;
-  const cols = 5;
-  const gap = 12;
+  const cols = M ? 3 : 5;
+  const gap = M ? 10 : 12;
   const cardW = (W - gap * (cols - 1)) / cols;
   const nameLH = normalLH('mono', 12);
   const cardH = 20 + 32 + 10 + nameLH + 20;
@@ -732,24 +821,27 @@ function stack() {
 
 function footer() {
   const doc = new Doc(W);
-  const P = 32;
+  const P = M ? 22 : 32;
+  const TS = M ? 32 : 40;
+  const SS = M ? 18 : 24;
   const kLH = normalLH('mono', 11);
-  const tLH = 40 * 1.05;
-  const sLH = normalLH('serif', 24);
-  doc.h = P + kLH + 8 + tLH + 8 + sLH + P;
+  const tLH = TS * 1.05;
+  const sLH = normalLH('serif', SS);
+  const bLH = normalLH('inter600', 14);
+  const bh = bLH + 24;
+  // Mobile puts the button under the copy instead of beside it
+  doc.h = P + kLH + 8 + tLH + 8 + sLH + (M ? 20 + bh : 0) + P;
   const parts = [glow(doc, W, doc.h, { cx: 1, cy: 1, rx: 0.7, ry: 1.2, color: '#00f5d4', alpha: C.glowFooter })];
   let y = P;
   parts.push(doc.text('mono', 11, 'READY TO BUILD', P, baseline('mono', 11, y, kLH), { fill: C.teal, ls: 1.1 }));
   y += kLH + 8;
-  parts.push(doc.text('syne700', 40, 'Got an idea?', P, baseline('syne700', 40, y, tLH)));
+  parts.push(doc.text('syne700', TS, 'Got an idea?', P, baseline('syne700', TS, y, tLH)));
   y += tLH + 8;
-  parts.push(doc.text('serif', 24, 'Prototype in under two days.', P, baseline('serif', 24, y, sLH), { fill: C.body }));
+  parts.push(doc.text('serif', SS, 'Prototype in under two days.', P, baseline('serif', SS, y, sLH), { fill: C.body }));
 
   const label = 'Start a conversation →';
-  const bLH = normalLH('inter600', 14);
   const bw = measure('inter600', 14, label) + 40;
-  const bh = bLH + 24;
-  const bx = W - P - bw;
+  const bx = M ? P : W - P - bw;
   const by = doc.h - P - bh;
   parts.push(rect(bx, by, bw, bh, 8, `fill="${C.button}"`), doc.text('inter600', 14, label, bx + 20, baseline('inter600', 14, by + 12, bLH), { fill: C.onButton }));
   doc.add(cardFrame(doc, W, doc.h, 14, C.bgHero, parts.join('')));
@@ -759,9 +851,22 @@ function footer() {
 // ---------- readme ----------
 
 function readme(products) {
-  // Dark SVG by default, light variant when the viewer's GitHub theme is light
-  const img = (file, alt, attrs = 'width="100%"') =>
-    `<picture><source media="(prefers-color-scheme: light)" srcset="assets/readme/${file.replace('.svg', '-light.svg')}"><img src="assets/readme/${file}" ${attrs} alt="${esc(alt)}"/></picture>`;
+  // Dark SVG by default, light variant when the viewer's GitHub theme is light, and a mobile pair
+  // below MOBILE_MAX. Source order and spelling matter because of GitHub's <themed-picture> script:
+  // when the viewer picks a fixed GitHub theme, it overwrites the whole `media` of any source that
+  // matches "prefers-color-scheme: light" (with a space) to always/never match, dropping any width
+  // condition. So the mobile sources come first and write "prefers-color-scheme:light" with no
+  // space, which the script leaves alone. Trade-off: on a phone, a viewer with a fixed GitHub theme
+  // that differs from their OS theme gets the OS-theme mobile art. With GitHub's "sync with system"
+  // setting the two always agree.
+  const light = f => f.replace('.svg', '-light.svg');
+  const img = (file, alt, attrs = 'width="100%"', mobile = file.replace('.svg', '-m.svg')) => {
+    const m = mobile
+      ? `<source media="(max-width: ${MOBILE_MAX}px) and (prefers-color-scheme:light)" srcset="assets/readme/${light(mobile)}">` +
+        `<source media="(max-width: ${MOBILE_MAX}px)" srcset="assets/readme/${mobile}">`
+      : '';
+    return `<picture>${m}<source media="(prefers-color-scheme: light)" srcset="assets/readme/${light(file)}"><img src="assets/readme/${file}" ${attrs} alt="${esc(alt)}"/></picture>`;
+  };
   const streak = 'https://streak-stats.demolab.com?user=idevtim&hide_border=true';
   const streakDark = `${streak}&theme=dark&background=0D1117&ring=00F5D4&fire=F72585&currStreakLabel=00F5D4&sideLabels=A1A1AA&dates=71717A`;
   const streakLight = `${streak}&background=FFFFFF&stroke=E4E4E7&ring=0F766E&fire=BE185D&currStreakNum=18181B&sideNums=18181B&currStreakLabel=0F766E&sideLabels=52525B&dates=71717A`;
@@ -788,31 +893,31 @@ Each one updates itself afterwards. Casks live in [idevtim/homebrew-tap](https:/
 
   return `<!-- Generated by scripts/build-readme-svgs.mjs from scripts/products.json. Edit those and run \`npm run build\`. -->
 
-${link('https://www.idevtim.com', img('hero.svg', "Got an idea? I'll prototype it. — Timothy Murphy, Full-Stack Developer"))}
+${link('https://www.idevtim.com', img('hero.svg', "Got an idea? I'll prototype it. Timothy Murphy, Full-Stack Developer"))}
 
 <p align="center">
-  ${link('https://www.idevtim.com', img('btn-book.svg', 'Book a free 30-min call', 'height="44"'))}
-  ${link('https://x.com/idevtim', img('btn-x.svg', 'X @idevtim', 'height="44"'))}
-  ${link('https://linkedin.com/in/idevtim', img('btn-linkedin.svg', 'LinkedIn', 'height="44"'))}
+  ${link('https://www.idevtim.com', img('btn-book.svg', 'Book a free 30-min call', 'height="44"', null))}
+  ${link('https://x.com/idevtim', img('btn-x.svg', 'X @idevtim', 'height="44"', null))}
+  ${link('https://linkedin.com/in/idevtim', img('btn-linkedin.svg', 'LinkedIn', 'height="44"', null))}
 </p>
 
 ${img('h-featured.svg', '01. Featured work')}
 
-${featuredList.map(p => link(p.url, img(`featured-${p.slug}.svg`, `${p.name} — ${p.featured.kicker}. ${p.featured.desc}`))).join('\n\n')}
+${featuredList.map(p => link(p.url, img(`featured-${p.slug}.svg`, `${p.name}: ${p.featured.kicker}. ${p.featured.desc}`))).join('\n\n')}
 
 ${img('h-everything.svg', "02. Everything I've built")}
 
-${rows.map(r => `<p>\n${r.map(p => `  ${link(p.url, img(`card-${p.slug}.svg`, `${p.name} (${p.platform}) — ${p.desc}`, 'width="32%"'))}`).join('\n')}\n</p>`).join('\n\n')}
+${rows.map(r => `<p>\n${r.map(p => `  ${link(p.url, img(`card-${p.slug}.svg`, `${p.name} (${p.platform}${p.status ? `, ${p.status.toLowerCase()}` : ''}): ${p.desc}`, 'width="32%"', `tile-${p.slug}.svg`))}`).join('\n')}\n</p>`).join('\n\n')}
 
 ${brew}${img('h-about.svg', '03. About me')}
 
-${img('about.svg', "class Developer extends Human { $name = 'Timothy Murphy'; $role = 'Full Stack Developer'; $years = 15; getCurrentFocus(): 'You bring the vision. I handle the code.' } — photo of Timothy, currently available")}
+${img('about.svg', "class Developer extends Human { $name = 'Timothy Murphy'; $role = 'Full Stack Developer'; $years = 15; getCurrentFocus(): 'You bring the vision. I handle the code.' }. Photo of Timothy, currently available")}
 
-${img('stack.svg', `04. What I build with — ${data.technologies.map(t => t.name).join(', ')}`)}
+${img('stack.svg', `04. What I build with: ${data.technologies.map(t => t.name).join(', ')}`)}
 
 <p align="center"><picture><source media="(prefers-color-scheme: light)" srcset="${esc(streakLight)}"><img src="${esc(streakDark)}" height="180" alt="GitHub Streak"/></picture></p>
 
-${link('https://www.idevtim.com', img('footer.svg', 'Got an idea? Prototype in under two days. Start a conversation →'))}
+${link('https://www.idevtim.com', img('footer.svg', 'Got an idea? Prototype in under two days. Start a conversation.'))}
 `;
 }
 
@@ -822,6 +927,7 @@ const { products } = data;
 await fs.rm(OUT, { recursive: true, force: true });
 await fs.mkdir(OUT, { recursive: true });
 
+const tileH = tileHeight(products);
 const cardH = Math.ceil(16 + 36 + 10 + Math.max(...products.map(p => cardLayout(p).lines.length)) * 13.5 * 1.55 + 10 + normalLH('mono', 11) + 4 + 16);
 
 let total = 0;
@@ -842,7 +948,24 @@ for (const theme of Object.keys(THEMES)) {
   for (const p of products) {
     if (p.featured) outputs[`featured-${p.slug}.svg`] = await featured(p);
     outputs[`card-${p.slug}.svg`] = await card(p, cardH);
+    outputs[`tile-${p.slug}.svg`] = await tile(p, tileH);
   }
+
+  // Mobile pass
+  W = MW;
+  M = true;
+  Object.assign(outputs, {
+    'hero-m.svg': await hero(products.length),
+    'h-featured-m.svg': header('01.', 'Featured work', { sub: 'Three products, told properly. Everything else is one scroll below.' }).doc,
+    'h-everything-m.svg': header('02.', "Everything I've built", { sub: `${products.length} products across web, iPhone, Mac and the browser.`, divider: true }).doc,
+    'h-about-m.svg': header('03.', 'About me', { divider: true }).doc,
+    'about-m.svg': await about(),
+    'stack-m.svg': stack(),
+    'footer-m.svg': footer(),
+  });
+  for (const p of products) if (p.featured) outputs[`featured-${p.slug}-m.svg`] = await featured(p);
+  W = DW;
+  M = false;
 
   for (const [file, doc] of Object.entries(outputs)) {
     const name = file.replace('.svg', `${THEMES[theme].suffix}.svg`);
